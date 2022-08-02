@@ -478,7 +478,7 @@ button {
 
 .icon-md {
     font-size: 25px!important;
-    color: #000000;
+    color: #000000!important;
 }
 
 .icon-md :hover{
