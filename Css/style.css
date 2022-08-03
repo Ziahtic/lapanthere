@@ -334,7 +334,6 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    font-weight: bold;
     background: transparent;
 }
 
@@ -436,6 +435,28 @@ nav .caret {
     float: right;
 }
 
+form{
+    margin-left :33%;
+}
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -477,12 +498,7 @@ button {
 }
 
 .icon-md {
-    font-size: 25px!important;
-    color: #000000!important;
-}
-
-.icon-md :hover{
-    color:#FFFFFF
+    font-size: 30px!important;
 }
 
 .icon-lg {
@@ -514,6 +530,7 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    background-color: rgba(0, 0, 0, .05);
 }
 
 .scrollToTop {
@@ -657,7 +674,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757;
+    color: #575757!important;
 }
 
 .container {
@@ -682,8 +699,12 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 15px;
+p, em {
+    font-size: 13px;
+}
+
+em{
+    font-weight: 700;
 }
 
 .tight-width-whitespace {
@@ -694,6 +715,7 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
+    color:#333333!important;
 }
 
 .cta-hero {
@@ -706,12 +728,12 @@ p {
 }
 
 .social {
-    margin: 30px auto 20px auto;
-    color: #000000;
+    max-width: 400px;
+    margin: auto auto auto auto;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 40px;
     line-height: 1.4em;
 }
 
@@ -742,11 +764,7 @@ h4 {
 }
 
 .white {
-    color:black;
-}
-
-.text-center.white {
-    color: white;
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -785,7 +803,7 @@ h4 {
 }
 
 .tc-white {
-    color: white!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -795,7 +813,7 @@ h4 {
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: black!important;
+    color: #FFFFFF!important;
 }
 
 .ltc-white {
@@ -803,8 +821,7 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: black!important;
-    font-weight: bold;
+    color: #cccccc!important;
 }
 
 .ltc-atomic-tangerine {
@@ -821,7 +838,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("../ressources/img/dots-bg.png");
+    background-image: url("../ressourcesimg/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -834,16 +851,6 @@ h4 {
 
 .bg-presentation {
     background-image: url("../ressources/img/image-de-presentation.bmp");
-}
-
-#bloc-8 ul{
-    display: flex;
-    flex-direction: row;
-    margin-top: -19px;
-}
-
-#bloc-8 li{
-    margin-left: 66px;
 }
 
 @media (max-width: 1024px) {
